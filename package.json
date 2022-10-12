@@ -1,5 +1,6 @@
 {
-  "name": "svelteviteapp001",
+  "name": "svelte_vite_tailwind_template",
+  "description": "Template Svelte + Vite + Tailwind + Flowbite, no Typescript",
   "private": true,
   "version": "0.0.0",
   "type": "module",
