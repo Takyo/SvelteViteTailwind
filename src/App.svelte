@@ -1,4 +1,5 @@
 <script>
+  import { Alert, Button } from 'flowbite-svelte';
   export let count = 0;
   function randomCount() {
     console.log(Math.random() * 2);
@@ -12,16 +13,27 @@
 
 <main class="border-4 border-green-400">
   <h1 class="p-10 text-4xl title">Svelte + vite + Tailwindcss</h1>
+  <Alert>
+    <div class="font-medium">
+      FLOWBITE!!!
+      <Button class="active:translate-y-2 transition-all">btn generico</Button>
+    </div>
+  </Alert>
+
   {#if count >= 0}
     <button
       class="bg-green-400 p-2 rounded text-white focus:outline-none shadow-md shadow-slate-300 active:translate-y-2 active:shadow-none transition-all"
-      on:click={randomCount}>Count: {count}</button
+      on:click={randomCount}
     >
+      Count: {count}
+    </button>
   {:else}
     <button
       class="bg-rose-400 p-2 rounded text-white focus:outline-none shadow-md shadow-slate-300 active:translate-y-2 active:shadow-none transition-all"
-      on:click={randomCount}>Count: {count}</button
+      on:click={randomCount}
     >
+      Count: {count}
+    </button>
   {/if}
 </main>
 

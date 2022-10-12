@@ -1,12 +1,11 @@
-import postcss from './postcss.config.cjs';
-import { svelte } from '@sveltejs/vite-plugin-svelte'
+// import postcss from './postcss.config.cjs';
+// import { svelte } from '@sveltejs/vite-plugin-svelte'
+// import { defineConfig } from 'vite'
+
 import { defineConfig } from 'vite'
+import { svelte } from '@sveltejs/vite-plugin-svelte'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [svelte()],
-  css:{
-    postcss
-  },
-  server: { port: 3000 },
+  plugins: [svelte()]
 })
